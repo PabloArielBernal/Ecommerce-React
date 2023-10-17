@@ -1,21 +1,34 @@
-
+import { ThemeProvider } from "@emotion/react";
 import { Navbar } from "./components/layout/navbar/Navbar";
-import {Home} from "./components/pages/home/Home"
+import { Home } from "./components/pages/home/Home";
 import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
 import { Login } from "./components/pages/login/Login";
+import { customTheme } from "./themeConfig";
+import { CounterContainer } from "./components/common/counter/CounterContainer";
+import { Counter } from "./components/common/counter/Counter";
+import { useState } from "react";
 
 function App() {
+  let nombre = "usuario";
 
-  let nombre = "gamer"
+  const [montar, setMontar] = useState( false )
 
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <Login />
-      <ItemListContainer nombre={nombre} edad={18} />
-    </div>
+    <ThemeProvider theme={customTheme}>
+      <div>
+        <Navbar />
+        <button onClick={()=>setMontar(!montar)}>Montar/Desmontar</button>
+        {
+          montar && <CounterContainer stock={5}/>
+        }
+        <Home />
+        <Login />
+        
+        <ItemListContainer/>
+      </div>
+      
+    </ThemeProvider>
   );
 }
 
-export default App
+export default App;
