@@ -1,33 +1,31 @@
-import { ThemeProvider } from "@emotion/react";
-import { Navbar } from "./components/layout/navbar/Navbar";
-import { Home } from "./components/pages/home/Home";
-import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./components/pages/login/Login";
+import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
+import { CartWidget } from "./components/common/cartWidget/CartWidget";
+import { ItemDetailContainer } from "./components/pages/itemDetailContainer/ItemDetailContainer";
+import { ErrorPage } from "./components/common/error/ErrorPage";
+import { Navbar } from "./components/layout/navbar/Navbar";
+import { CartContainer } from "./components/pages/cart/CartContainer";
+import { ThemeProvider } from "@mui/material";
 import { customTheme } from "./themeConfig";
-import { CounterContainer } from "./components/common/counter/CounterContainer";
-import { Counter } from "./components/common/counter/Counter";
-import { useState } from "react";
 
 function App() {
-  let nombre = "usuario";
-
-  const [montar, setMontar] = useState( false )
-
   return (
-    <ThemeProvider theme={customTheme}>
-      <div>
-        <Navbar />
-        <button onClick={()=>setMontar(!montar)}>Montar/Desmontar</button>
-        {
-          montar && <CounterContainer stock={5}/>
-        }
-        <Home />
-        <Login />
-        
-        <ItemListContainer/>
-      </div>
-      
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={customTheme}>
+        <Routes>
+          <Route element={<Navbar />}>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/category/:categoryName" element={<ItemListContainer />} />
+            <Route path="/cart" element={<CartContainer />} />
+            <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+          </Route>
+
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

@@ -1,19 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Counter } from "./Counter";
 
-export const CounterContainer = ({ stock }) => {
-  console.log("Me monté");
-
+export const CounterContainer = ({ stock, onAdd }) => {
   const [contador, setContador] = useState(1);
-  const [nombre, setNombre] = useState("Agregar al carrito");
-
-  const restar = () => {
-    if (contador > 1) setContador(contador - 1);
-  };
-
-  const restablecer = () => {
-    setContador(1);
-  };
 
   const sumar = () => {
     if (contador < stock) {
@@ -23,15 +12,21 @@ export const CounterContainer = ({ stock }) => {
     }
   };
 
-  useEffect(() => {}, []);
+  const restar = () => {
+    if (contador > 1) setContador(contador - 1);
+  };
+
+  const restablecer = () => {
+    setContador(1);
+  };
 
   return (
     <Counter
       sumar={sumar}
       restar={restar}
       restablecer={restablecer}
-      nombre={nombre}
-      setNombre={setNombre}
+      contador={contador}
+      onAdd={onAdd}
     />
   );
 };

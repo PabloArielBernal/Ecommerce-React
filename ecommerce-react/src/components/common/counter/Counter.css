@@ -1,0 +1,21 @@
+.counter-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    
+}
+
+.counter-button{
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.counter {
+    font-size: 35px;
+    background-color: #ecdd0f;
+    padding: 5px 20px ;
+    border-radius: 7px;
+    color: #000;
+}

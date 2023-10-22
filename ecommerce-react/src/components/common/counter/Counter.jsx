@@ -1,15 +1,14 @@
+import "./Counter.css"
 
-
-export const Counter = ( {sumar, restar, contador, restablecer, nombre, setNombre} ) => {
+export const Counter = ( {sumar, restar, contador, restablecer, onAdd} ) => {
 
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-      <button onClick={sumar}>sumar</button><br />
-      <h4 style={{padding:8, border: "3px solid black", fontFamily:"cursive", borderRadius:7, fontSize: "200px"}}>{contador}</h4>
-      <button onClick={restar}>restar</button><br />
-      <button onClick={restablecer}>restablecer</button>
-      <h4>{nombre}</h4>
-      <button onClick={()=>setNombre("Agregado")}>Al carrito</button>
+    <div className="counter-container">
+      <button className="counter-button" onClick={sumar}>sumar</button>
+      <h4 className="counter"> {contador} </h4>
+      <button className="counter-button" onClick={restar}>restar</button>
+      <button className="counter-button" onClick={restablecer}>restablecer</button>
+      <button className="counter-button" onClick={ ()=> onAdd(contador) }>Agregar al carrito</button>
     </div>
   )
 }
