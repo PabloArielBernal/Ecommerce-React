@@ -5,7 +5,6 @@ import { Outlet, Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <>
       <nav className="navbar">
         <Link to="/">
           <img src="https://res.cloudinary.com/drmbbxdtf/image/upload/v1696190816/Ecommerce%20Tienda%20de%20Videojuegos/logo3.png" alt="logo" width="150"/>
@@ -33,8 +32,5 @@ export const Navbar = () => {
            <CartWidget />
         </ul>
       </nav>
-
-      <Outlet />
-    </>
   );
 };

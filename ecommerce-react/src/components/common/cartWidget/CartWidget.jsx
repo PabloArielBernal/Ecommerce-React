@@ -6,7 +6,7 @@ export const CartWidget = () => {
   return (
     <Link to="./cart">
       <Badge badgeContent={0} showZero color="primary">
-      <ShoppingCartIcon color="primary" />
+      <ShoppingCartIcon color="primary"/>
     </Badge>
     </Link>
   );

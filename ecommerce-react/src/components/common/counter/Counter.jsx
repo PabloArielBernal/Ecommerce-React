@@ -3,7 +3,7 @@ import "./Counter.css"
 export const Counter = ( {sumar, restar, contador, restablecer, onAdd} ) => {
 
   return (
-    <div className="counter-container">
+    <div className="counter-container" style={{padding: "70px", marginRight: "500px", opacity:"inherit" }}>
       <button className="counter-button" onClick={sumar}>sumar</button>
       <h4 className="counter"> {contador} </h4>
       <button className="counter-button" onClick={restar}>restar</button>

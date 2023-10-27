@@ -1,0 +1,97 @@
+.footer{
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    height: 280px;
+    margin-top: 100px;
+}
+
+.WhatsAppIcon{
+    color: greenyellow;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    font-family: 25px;
+    color: #000000;
+    background-color: #f0cf17;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: 2px solid white;
+    border-radius: 3px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    gap: 10px;
+    align-items: unset;
+    margin-top: 30px;
+}
+
+.redes a > svg{
+    width: 100%;
+    color: #fff;
+    font-size: 100px;
+    height: 35px;
+}
+
+.redes a > svg:hover {
+    color: #f0cf17;
+}
+
+
+#a li{
+    margin-bottom: 15px;
+    background-color: #3e3e3e;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#a li:hover {
+    background-color: #f0cf17;
+    color: #000;
+    transition: all 0.9s;
+}
+
+.medios-de-pago li{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.medios-de-pago img{
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 7px;
+    flex-wrap: wrap;
+    
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright:hover{
+    color: #f0cf17;
+    transition: all 0.3s;
+}
