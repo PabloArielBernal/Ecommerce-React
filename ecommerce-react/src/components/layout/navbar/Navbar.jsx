@@ -25,10 +25,10 @@ export const Navbar = () => {
           <Link to="/category/juegos-ps3">
             <li><Button variant="contained">juegos de ps3</Button></li>
           </Link>
-          <Link to="/category/contacto">
+          <Link to="/contacto">
             <li><Button variant="contained">contacto</Button></li>
           </Link>
-
+          
            <CartWidget />
         </ul>
       </nav>

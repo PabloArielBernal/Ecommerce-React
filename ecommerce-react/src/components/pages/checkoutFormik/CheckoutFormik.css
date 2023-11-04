@@ -1,0 +1,24 @@
+.checkout-container{
+    padding: 100px;
+    
+}
+
+form{
+    border: 3px solid #368ee6;
+    width: 60%;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom:40px;
+    gap: 40px;
+}
+
+.botones {
+    margin-left: 70px;
+    display: flex;
+    gap: 15px;
+}

@@ -44,8 +44,8 @@ export const Footer = () => {
         <a className="red" href="https:/www.twitter.com" target="_blank"><TwitterIcon /></a>
         <a className="red" href="https:/www.youtube.com" target="_blank"><YouTubeIcon /></a>
       </ul>
-      <p class="copyright">Pablo Ariel Bernal. Copyright © 2023 Todos los derechos son reservados.</p>
-      <a href="#" class="subir"><KeyboardArrowUpIcon /></a>
+      <p className="copyright">Pablo Ariel Bernal. Copyright © 2023 Todos los derechos son reservados.</p>
+      <a href="#" className="subir"><KeyboardArrowUpIcon /></a>
     </div>
   );
 };

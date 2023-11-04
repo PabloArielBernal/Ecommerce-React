@@ -12,9 +12,9 @@ export let products = [
     {
         id: 2,
         title: "Metal Gear Solid 3:cd Snake Eater",
-        price: 8000,
+        price: 11000,
         stock: 4,
-        description: "Descripción del juego",
+        description: "Metal Gear Solid 3: Snake Eater narra la historia del origen de Naked Snake y su mentora, The Boss, y es el quinto título de la serie METAL GEAR.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696028197/Ecommerce%20Tienda%20de%20Videojuegos/accion/Metal-Gear-Solid-3-Snake-Eater.jpg"
     },
@@ -32,9 +32,9 @@ export let products = [
     {
         id: 4,
         title: "GTA III",
-        price: 10000,
-        stock: 11,
-        description: "Descripción del juego",
+        price: 12000,
+        stock: 9,
+        description: "Claude es el protagonista de GTA 3, traicionado por su novia y encarcelado durante diez años, logra escapar junto con su amigo 8-Ball para servir a la familia mafiosa Leone, enfrentada con una banda de colombianos que pretende vender una nueva droga en la ciudad. Aunque no exento de polémica, Grand Theft Auto III se configura como un videojuego detallista, con gran interés por cuidar la ciudad, los modelados de personajes y vehículos y la libertad que aporta al jugador.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696028421/Ecommerce%20Tienda%20de%20Videojuegos/accion/gta-3.jpg"
     },
@@ -44,7 +44,7 @@ export let products = [
         title: "God of War",
         price: 14000,
         stock: 5,
-        description: "Descripción del juego",
+        description: "El dios de la Guerra inicia sus aventuras con God of War, uno de los juegos de acción más aclamados de su tiempo. Desarrollado por SCE Santa Monica Studio, God of War basa su jugabilidad en las aventuras de Kratos, un semidiós espartano que se enfrenta a diversos personajes de la mitología griega, tanto héroes como especies mitológicas, dioses griegos y también titanes.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696028639/Ecommerce%20Tienda%20de%20Videojuegos/accion/god-of-war.jpg"
     },
@@ -54,7 +54,7 @@ export let products = [
         title: "God of War II",
         price: 23000,
         stock: 9,
-        description: "Descripción del juego",
+        description: "Retomando la mitología grecolatina, ayudamos a Kratos, el nombrado dios de la guerra, a continuar su pugna contra el Olimpo. La violenta acción del videojuego nos lleva a vivir algunos de los enfrentamientos más memorables de la saga, consiguiendo la Espada del Olimpo para despachar al Coloso de Rodas y progresando hasta plantar cara al mismo Zeus. God of War II se configura así como uno de los hack and slash más sólidos de todos los tiempos, condimentando su sangrienta campaña con secciones de plataformas y puzzles.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696028789/Ecommerce%20Tienda%20de%20Videojuegos/accion/god-of-war-2.jpg"
     },
@@ -62,9 +62,9 @@ export let products = [
     {
         id: 7,
         title: "Max Payne",
-        price: 8000,
+        price: 9000,
         stock: 8,
-        description: "Descripción del juego",
+        description: "En Max Payne encarnamos a un detective del mismo nombre que, a lo largo de toda la saga en general y de esta entrega en particular, sufre constantes varapalos y golpes mientras trata de acabar con sus enemigos. Con unas mecánicas shooter muy cuidadas y con un fascinante y espectacular uso de la cámara lenta, absolutamente revolucionario para su época, este videojuego supone un cambio en la forma de concebir esta clas de producciones.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696030079/Ecommerce%20Tienda%20de%20Videojuegos/accion/max-payne.webp"
     },
@@ -74,7 +74,7 @@ export let products = [
         title: "Max payne 2",
         price: 11000,
         stock: 11,
-        description: "Descripción del juego",
+        description: "Su peculiar estilo Matrix, su guión de juego, su jugabilidad… Max Payne vuelve a la carga con Max Payne 2: The Fall of Max Payne.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696030041/Ecommerce%20Tienda%20de%20Videojuegos/accion/max-payne-2.webp"
     },
@@ -82,9 +82,9 @@ export let products = [
     {
         id: 9,
         title: "Reservoir Dogs",
-        price: 6000,
+        price: 8500,
         stock: 6,
-        description: "Descripción del juego",
+        description: "Juego de acción basado en la película del mismo nombre, dirigida en 1992 por Quentin Tarantino. El juego ofrece la oportunidad de recrear los diferentes acontecimientos que transcurren en la película, bajo la perspectiva de cada uno de los personajes.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696030203/Ecommerce%20Tienda%20de%20Videojuegos/accion/reservoir-dogs.png"
     },
@@ -92,9 +92,9 @@ export let products = [
     {
         id: 10,
         title: "Hitman blood money",
-        price: 9000,
+        price: 9500,
         stock: 8,
-        description: "Descripción del juego",
+        description: "Hitman: Blood Money es una entrega de la saga del legendario asesino Agente 47 para consolas de sexta y séptima generación, así como compatibles. La campaña nos traslada a Estados Unidos, donde 47 acepta el encargo del padre de una de las víctimas del accidente del parque de atracciones Baltimore. Después de asesinar al propietario del parque, comienza a recibir encargos de todas partes del país.",
         category: "accion",
         img: "https://res.cloudinary.com/drmbbxdtf/image/upload/v1696127869/Ecommerce%20Tienda%20de%20Videojuegos/accion/hitman-blood-money.jpg"
     },
