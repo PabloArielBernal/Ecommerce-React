@@ -19,3 +19,8 @@
     border-radius: 7px;
     color: #000;
 }
+
+.MuiAlert-root{
+    width: 15%;
+    margin-left: 40px;
+}

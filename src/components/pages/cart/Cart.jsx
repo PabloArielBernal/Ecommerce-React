@@ -22,6 +22,7 @@ export const Cart = () => {
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
+        clearCart()
         Swal.fire('Carrito vaciado!', '', 'success')
       } else if (result.isDenied) {
         Swal.fire('Cambios no guardados', '', 'info')

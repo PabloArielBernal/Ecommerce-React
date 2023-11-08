@@ -7,7 +7,7 @@ export const ItemList = ({ items }) => {
   return (
     <section className="grid-container" style={{ display: "flex", flexWrap:"wrap", justifyContent:"center", gap:"100px", marginTop: "100px" }}>
       {items.map((item) => {
-        return <ProductCard key={item.id} item={item} />
+        return <ProductCard key={item.id} item={item}/>
         
       
 

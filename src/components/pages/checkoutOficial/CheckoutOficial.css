@@ -1,0 +1,66 @@
+.gracias-container h1{
+    color: #1ed702;
+    display: flex;
+    margin: 20px 0 0 20px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.link{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 15px 0 0 20px;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    border: 2px solid #808080;
+
+}
+
+.gracias-item {
+    padding: 50px;
+    width: 40%;
+    border-radius: 30px;
+    margin: 70px 0 0 500px;
+    background-color: #1ed702;
+    transition: 0.4s ease;
+    border: 3px solid #fff;
+}
+
+.gracias-item:hover{
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    transform: rotate(2deg);
+}
+
+.gracias-item img {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 50%;
+    margin-left: 170px;
+}
+
+.gracias-item p {
+    font-size: 45px;
+}
+
+#msj1{
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#msj2{
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    border-radius: 3px;
+
+}

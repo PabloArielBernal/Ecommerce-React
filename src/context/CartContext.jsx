@@ -3,8 +3,7 @@ import { createContext, useState } from "react";
 export const CartContext = createContext();
 
 export const CartContextComponent = ({ children }) => {
-  const [cart, setCart] = useState([]);
-
+  const [cart, setCart] = useState( JSON.parse(localStorage.getItem("cart")) || [] );
   const addToCart = (product) => {
     let exist = isInCart(product.id);
     if (exist) {
@@ -12,15 +11,17 @@ export const CartContextComponent = ({ children }) => {
         if (elemento.id === product.id) {
           return {
             ...elemento,
-            quantity: elemento.quantity,
+            quantity: product.quantity,
           };
         } else {
           return elemento;
         }
       });
       setCart(newArray);
+      localStorage.setItem( "cart", JSON.stringify(newArray) )
     } else {
       setCart([...cart, product]);
+      localStorage.setItem( "cart", JSON.stringify([...cart, product]))
     }
   };
 
@@ -37,6 +38,7 @@ export const CartContextComponent = ({ children }) => {
   // Funcion para limpiar el carrito
   const clearCart = () => {
     setCart([]);
+    localStorage.removeItem("cart")
   };
 
   // Funcion para eliminar un producto
@@ -44,6 +46,7 @@ export const CartContextComponent = ({ children }) => {
     console.log("el id es: ", id);
     let newArray = cart.filter((product) => product.id !== id);
     setCart(newArray);
+    localStorage.setItem("cart", JSON.stringify( newArray ) )
   };
 
   // Obtener el precio total del carrito
