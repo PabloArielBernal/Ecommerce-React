@@ -8,11 +8,6 @@ export const CheckoutFormik = () => {
   const { handleChange, handleSubmit, errors } = useFormik({
     initialValues: { nombre: "", apellido: "", email: "" },
 
-    onSubmit: (data) => {
-      console.log("se envió");
-      console.log(data);
-    },
-
     validateOnChange: false,
 
     validationSchema: Yup.object({
@@ -26,8 +21,6 @@ export const CheckoutFormik = () => {
         .required("Este campo es obligatorio"),
     }),
   });
-
-  console.log(errors);
 
   return (
     <div className="checkout-container">

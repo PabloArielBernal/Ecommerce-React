@@ -9,7 +9,6 @@ import { ErrorPage } from "../common/error/ErrorPage"
 export const Fetch = () => {
 
     let { data, isLoading, errorMessage } = useFetch("https://jsonplaceholder.typicode.com/albums", [])
-    console.log(data)
 
 
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Contacto.css"
+import { Footer } from "../../layout/footer/Footer";
 
 export const Contacto = () => {
   return (
@@ -34,7 +35,8 @@ export const Contacto = () => {
           <li>
             <img src="https://res.cloudinary.com/drmbbxdtf/image/upload/v1698200283/Ecommerce%20Tienda%20de%20Videojuegos/playstation-network.png" alt="ps-network" /></li>
         </ul>
-      </div>  
+      </div>
+<Footer />
     </div>
   )
 }

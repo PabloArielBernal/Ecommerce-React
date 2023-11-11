@@ -9,11 +9,9 @@ export const AppRouter = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
-      {
-            routes.map(({id, path, Element }) => {
-                return <Route key={id} path={path} element={<Element />} />;
-            } )
-        }
+        {routes.map(({ id, path, Element }) => {
+          return <Route key={id} path={path} element={<Element />} />;
+        })}
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="*" element={<ErrorPage />} />

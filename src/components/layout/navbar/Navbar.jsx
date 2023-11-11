@@ -19,8 +19,7 @@ export const Navbar = () => {
         });
         setCategories(arrayCategories);
       })
-      .catch((err) => console.log(err));
-  });
+  }, []);
 
   return (
     <>
@@ -34,12 +33,15 @@ export const Navbar = () => {
         </Link>
         <ul className="categories">
           <Link to={"/"}>
-          <li><Button variant="contained">todos</Button></li>
+            <li>
+              <Button variant="contained">todos</Button>
+            </li>
           </Link>
           {categories.map((category) => (
             <Link key={category.id} to={category.path}>
               <li>
-              <Button variant="contained">{category.name}</Button></li>
+                <Button variant="contained">{category.name}</Button>
+              </li>
             </Link>
           ))}
 
@@ -49,5 +51,3 @@ export const Navbar = () => {
     </>
   );
 };
-
-

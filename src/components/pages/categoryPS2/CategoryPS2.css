@@ -1,0 +1,173 @@
+
+
+.category-items {
+  width: 100%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.grupo1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  overflow: hidden;
+  text-shadow: 2px 2px 10px #000;
+  gap: 100px;
+  border-radius: 10px;
+  margin: 60px;
+}
+
+.grupo2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  overflow: hidden;
+  text-shadow: 2px 2px 10px #000;
+  gap: 100px;
+  margin-top: 60px;
+  border-radius: 10px;
+  margin: 60px;
+}
+
+.grupo3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  overflow: hidden;
+  text-shadow: 2px 2px 10px #000;
+  gap: 100px;
+  margin-top: 60px;
+  border-radius: 10px;
+  margin: 60px;
+}
+
+#accion {
+  background-image: url("https://res.cloudinary.com/drmbbxdtf/image/upload/v1699652793/Ecommerce%20Tienda%20de%20Videojuegos/god-of-war.webp");
+  font-size: 4em;
+  text-decoration: none;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 900ms;
+  color: #fff;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#accion:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+
+#aventura {
+  background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699653683/Ecommerce%20Tienda%20de%20Videojuegos/shadow-of-the-colossus.png);
+  font-size: 4em;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 900ms;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#aventura:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+
+#deportes {
+  background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699654690/Ecommerce%20Tienda%20de%20Videojuegos/pes.jpg);
+  font-size: 4em;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 900ms;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#deportes:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+
+#carreras {
+  background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699654948/Ecommerce%20Tienda%20de%20Videojuegos/gt4.jpg);
+  font-size: 4em;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 900ms;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#carreras:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+
+#terror {
+  background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699655078/Ecommerce%20Tienda%20de%20Videojuegos/sillent-hill.jpg);
+  font-size: 4em;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 900ms;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#terror:hover{
+  transform: scale(1.1);
+  filter: none;
+}
+
+#lucha {
+  background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699655385/Ecommerce%20Tienda%20de%20Videojuegos/dbz.jpg);
+  font-size: 4em;
+  text-decoration: none;
+  height: 300px;
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 900ms;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+#lucha:hover{
+  transform: scale(1.1);
+  filter: none;
+}

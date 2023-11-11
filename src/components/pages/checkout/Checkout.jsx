@@ -38,7 +38,6 @@ export const Checkout = () => {
   
     return
     }
-  console.log(userInfo)
   };
   return (
     <div className="checkout-container">

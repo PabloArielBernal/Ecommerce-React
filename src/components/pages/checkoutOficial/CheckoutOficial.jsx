@@ -10,6 +10,8 @@ import { CartContext } from "../../../context/CartContext";
 import { database } from "../../../firebaseConfig";
 import "./CheckoutOficial.css";
 import { Link } from "react-router-dom";
+import { Footer } from "../../layout/footer/Footer";
+import { Button } from "@mui/material";
 
 export const CheckoutOficial = () => {
   const [userData, setUserData] = useState({
@@ -43,12 +45,12 @@ export const CheckoutOficial = () => {
     addDoc(ordersCollection, order).then((res) => setOrderId(res.id));
 
     cart.forEach((elemento) => {
-        updateDoc(doc(database, "products", elemento.id), {
+      updateDoc(doc(database, "products", elemento.id), {
         stock: elemento.stock - elemento.quantity,
       });
     });
 
-    clearCart()
+    clearCart();
   };
 
   return (
@@ -69,28 +71,49 @@ export const CheckoutOficial = () => {
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Ingresa tu nombre"
-            name="name"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Ingresa tu telefono"
-            name="phone"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Ingresa tu email"
-            name="email"
-            onChange={handleChange}
-          />
-          <button type="submit">Comprar</button>
-        </form>
+        <div className="checkout-container">
+          <p className="checkout-title">Completa tus datos</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              onChange={handleChange}
+              required="required"
+            />
+            <span>nombre</span>
+            <input
+              type="text"
+              name="name"
+              onChange={handleChange}
+              required="required"
+            />
+            <span>apellido</span>
+            <input
+              type="text"
+              name="phone"
+              onChange={handleChange}
+              required="required"
+            />
+            <span>telefono</span>
+            <input
+              type="text"
+              name="email"
+              onChange={handleChange}
+              required="required"
+            />
+            <span>email</span>
+            <div className="botones">
+          <Button variant="contained" color="info" type="submit">
+            Enviar
+          </Button>
+          <Button variant="contained" type="button">
+            Cancelar
+          </Button>
+          </div>
+          </form>
+        </div>
       )}
+      <Footer />
     </>
   );
 };

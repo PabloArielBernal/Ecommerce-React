@@ -2,6 +2,7 @@ import React from "react";
 import { CounterContainer } from "../../common/counter/CounterContainer";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
+import { Footer } from "../../layout/footer/Footer";
 
 export const ItemDetail = ({
   productSelected,
@@ -43,6 +44,7 @@ export const ItemDetail = ({
           }
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

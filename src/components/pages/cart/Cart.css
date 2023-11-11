@@ -6,7 +6,24 @@
     margin: 50px 150px;
 }
 
-.cart-container p{
+.cart-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cart-item img{
+    height: 50px;
+    transition: 0.9s ease;
+}
+
+.cart-item img:hover{
+    transform: translateX(20px);
+}
+
+
+.cart-title{
     font-size: 50px;
     color: black;
     text-align: center;
@@ -51,3 +68,25 @@
     margin: 60px 0 0 500px;
     display: flex;
 }
+
+.tachito{
+    animation: none;
+}
+
+.tachito:hover { 
+    transition: transform 0.3s ease;
+    animation: shake 2s infinite; 
+  }
+
+
+@keyframes shake {
+        0%, 100% {
+          transform: rotate(10deg);
+        }
+        25%, 75% {
+          transform: rotate(-10deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+      }

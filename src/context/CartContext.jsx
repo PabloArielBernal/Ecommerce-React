@@ -43,7 +43,6 @@ export const CartContextComponent = ({ children }) => {
 
   // Funcion para eliminar un producto
   const deleteProductById = (id) => {
-    console.log("el id es: ", id);
     let newArray = cart.filter((product) => product.id !== id);
     setCart(newArray);
     localStorage.setItem("cart", JSON.stringify( newArray ) )
