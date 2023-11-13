@@ -1,164 +1,312 @@
-.gracias-container h1{
-    color: #1ed702;
-    display: flex;
-    margin: 20px 0 0 20px;
-    font-weight: 900;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: uppercase;
+.gracias-container h1 {
+  color: #1ed702;
+  display: flex;
+  margin: 20px 0 0 20px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
 }
 
-.link{
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 15px 0 0 20px;
-    display: inline-block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: uppercase;
-    border: 2px solid #808080;
-
+.link {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 15px 0 0 20px;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  border: 2px solid #808080;
 }
 
 .gracias-item {
-    padding: 50px;
-    width: 40%;
-    border-radius: 30px;
-    margin: 70px 0 0 500px;
-    background-color: #1ed702;
-    transition: 0.4s ease;
-    border: 3px solid #fff;
+  padding: 50px;
+  width: 40%;
+  border-radius: 30px;
+  margin: 70px 0 0 500px;
+  background-color: #1ed702;
+  transition: 0.4s ease;
+  border: 3px solid #fff;
 }
 
-.gracias-item:hover{
-    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
-    transform: rotate(2deg);
+.gracias-item:hover {
+  box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+  transform: rotate(2deg);
 }
 
 .gracias-item img {
-    display: flex;
-    align-items: center;
-    height: 180px;
-    width: 50%;
-    margin-left: 170px;
+  display: flex;
+  align-items: center;
+  height: 180px;
+  width: 50%;
+  margin-left: 170px;
 }
 
 .gracias-item p {
-    font-size: 39px;
+  font-size: 39px;
 }
 
-#msj1{
-    color: #fff;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 10px #000;
+#msj1 {
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #000;
 }
 
-#msj2{
-    background-color: #fff;
-    margin-top: 30px;
-    padding: 10px;
-    display: flex;
-    text-align: center;
-    border-radius: 3px;
-
+#msj2 {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  border-radius: 3px;
 }
 
-.checkout-container{
-    padding: 50px;
-    
+.checkout-container {
+  padding: 50px;
 }
 
-form{
-    background-color: #ddd;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    border-radius: 20px;
-    margin-top: 50px;
-    width: 50%;
-    margin-left: 150px;
+form {
+  background-color: #ddd;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 50%;
+  margin-left: 150px;
 }
 
-.checkout-container input{
-    padding: 12px;
-    border: 1px solid rgba(225, 225, 225, 0.25);
-    background: #1b2b3a;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    font-size: 1em;
-    transition: 0.5s;
-    width: 60%;
-    
+.checkout-container input {
+  padding: 12px;
+  border: 1px solid rgba(225, 225, 225, 0.25);
+  background: #1b2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+  width: 60%;
 }
 
 .checkout-container form span {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: rgba(225, 225, 225, 0.40);
-    text-transform: uppercase;
-    transition: 0.5s;
-    margin-top: -121px;
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(225, 225, 225, 0.4);
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-top: -121px;
 }
-
-.checkout-container span:nth-child(8) {
-    top: 744px;
-}
-
-.checkout-container form span:nth-child(2) {
-    top: 534px;
-}
-
-.checkout-container form span:nth-child(6) {
-    top: 674px;
-}
-
-.checkout-container form span:nth-child(4) {
-    top: 603px;
-}
-
-.checkout-container input:valid ~ span,
-.checkout-container input:focus ~ span {
-    color: #45dc4e;
-    transform: translateX(10px) translateY(-7px)  ;
-    font-size: 0.65em;
-    padding: 0 10px;
-    background: #1b2b3a;
-    border: 1px solid #45dc4e;
-    border-radius: 2px;
-    letter-spacing: 0.2em;
-}
-
-.checkout-container:nth-child(0) input:valid ~ span,
-.checkout-container:nth-child(1) input:focus ~ span {
-    background: #45dc4e;
-    color: #1b2b3a;
-    border-radius: 2px;
-}
-
-
-.checkout-container input:valid,
-.checkout-container input:focus{
-    border: 1px solid #45dc4e;
-}
-
-
-
-
-
-
-
-
-
 
 .botones {
     margin-left: 70px;
     display: flex;
     gap: 15px;
+}
+
+.checkout-container span:nth-child(8) {
+  top: 744px;
+}
+
+.checkout-container form span:nth-child(2) {
+  top: 534px;
+}
+
+.checkout-container form span:nth-child(6) {
+  top: 674px;
+}
+
+.checkout-container form span:nth-child(4) {
+  top: 603px;
+}
+
+.checkout-container input:valid ~ span,
+.checkout-container input:focus ~ span {
+  color: #45dc4e;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1b2b3a;
+  border: 1px solid #45dc4e;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
+
+.checkout-container:nth-child(0) input:valid ~ span,
+.checkout-container:nth-child(1) input:focus ~ span {
+  background: #45dc4e;
+  color: #1b2b3a;
+  border-radius: 2px;
+}
+
+.checkout-container input:valid,
+.checkout-container input:focus {
+  border: 1px solid #45dc4e;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .gracias-container h1 {
+        color: #1ed702;
+        display: flex;
+        margin: 20px 0 0 20px;
+        font-weight: 900;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        text-transform: uppercase;
+        font-size: 23px;
+      }
+      
+      .link {
+        background-color: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 15px 0 0 20px;
+        display: inline-block;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        text-transform: uppercase;
+        border: 2px solid #808080;
+      }
+      
+      .gracias-item {
+        padding: 10px 25px 25px 25px;
+        width: 100%;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+        background-color: #1ed702;
+        transition: 0.4s ease;
+        border: 3px solid #fff;
+      }
+      
+      .gracias-item img {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 50%;
+        margin-left: 100px;
+      }
+      
+      .gracias-item p {
+        font-size: 28px;
+      }
+      
+      #msj1 {
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 10px #000;
+      }
+      
+      #msj2 {
+        background-color: #fff;
+        margin-top: 30px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        border-radius: 3px;
+      }
+      
+      .checkout-container {
+        padding: 0;
+        margin: 0;
+      }
+
+      .checkout-container p {
+        margin-left: 30px;
+        padding: 20px;
+        font-size: 35px;
+      }
+      
+      form {
+        background-color: #ddd;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-radius: 20px;
+        margin: 10px;
+        width: 100%;
+        margin-left: 0px;
+      }
+      
+      .checkout-container input {
+        padding: 12px;
+        border: 1px solid rgba(225, 225, 225, 0.25);
+        background: #1b2b3a;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 1em;
+        transition: 0.5s;
+        width: 100%;
+      }
+      
+      .checkout-container form span {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        color: rgba(225, 225, 225, 0.4);
+        text-transform: uppercase;
+        transition: 0.5s;
+        margin-top: 311px;
+      }
+
+      .botones {
+        margin-left: 70px;
+        display: flex;
+        gap: 15px;
+    }
+      
+      .checkout-container span:nth-child(8) {
+        top: 744px;
+      }
+      
+      .checkout-container form span:nth-child(2) {
+        top: 534px;
+      }
+      
+      .checkout-container form span:nth-child(6) {
+        top: 674px;
+      }
+      
+      .checkout-container form span:nth-child(4) {
+        top: 603px;
+      }
+      
+      .checkout-container input:valid ~ span,
+      .checkout-container input:focus ~ span {
+        color: #45dc4e;
+        transform: translateX(10px) translateY(-7px);
+        font-size: 0.65em;
+        padding: 0 10px;
+        background: #1b2b3a;
+        border: 1px solid #45dc4e;
+        border-radius: 2px;
+        letter-spacing: 0.2em;
+      }
+      
+      .checkout-container:nth-child(0) input:valid ~ span,
+      .checkout-container:nth-child(1) input:focus ~ span {
+        background: #45dc4e;
+        color: #1b2b3a;
+        border-radius: 2px;
+      }
+      
+      .checkout-container input:valid,
+      .checkout-container input:focus {
+        border: 1px solid #45dc4e;
+      }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
 }

@@ -34,18 +34,19 @@ export const Navbar = () => {
         <ul className="categories">
           <Link to={"/"}>
             <li>
-              <Button variant="contained">todos</Button>
+              <Button id="boton-navbar" variant="contained">todos</Button>
             </li>
           </Link>
           {categories.map((category) => (
             <Link key={category.id} to={category.path}>
               <li>
-                <Button variant="contained">{category.name}</Button>
+                <Button id="boton-navbar" variant="contained">{category.name}</Button>
               </li>
             </Link>
           ))}
-
+          <span id="cartwidget" placeholder="20Tienda" >
           <CartWidget />
+          </span>
         </ul>
       </nav>
     </>

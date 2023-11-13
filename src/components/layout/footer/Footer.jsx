@@ -38,7 +38,7 @@ export const Footer = () => {
         
         </div>
       </ul>
-      <ul className="redes">
+      <ul className="redes-footer">
         <a className="red" href="https:/www.facebook.com" target="_blank"><FacebookOutlinedIcon /></a>
         <a className="red" href="https:/www.instagram.com" target="_blank"><InstagramIcon /></a>
         <a className="red" href="https:/www.twitter.com" target="_blank"><TwitterIcon /></a>

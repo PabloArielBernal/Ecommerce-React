@@ -41,7 +41,7 @@ export const Cart = () => {
       {cart.map((product) => (
         <div className="card" key={product.id}>
           <img src={product.img} alt={product.title} />
-          <h2>{product.title}</h2>
+          <h1>{product.title}</h1>
           <h2>${product.price}</h2>
           <h3>cantidad: {product.quantity}</h3>
           {

@@ -19,30 +19,29 @@ export const ItemDetail = ({
           alt={productSelected.title}
           height={"500px"}
         />
-        <div className="columns">
-          <p className="detail-description">{productSelected.description}</p>
-          <p className="detail-price">$ {productSelected.price}</p>
+        <p className="detail-description">{productSelected.description}</p>
+      </div>
+        <p className="detail-price">Precio: ${productSelected.price}</p>
 
-          {showCounter ? (
-            <CounterContainer
+      <div className="contadores">
+        {showCounter ? (
+          <CounterContainer
             stock={productSelected.stock}
             onAdd={onAdd}
             initial={initial}
             style={{ backgroundColor: "red", padding: "10px" }}
-            />
-            ) : (
-              <div>
-              <Link className="boton-carrito" to="/cart">
-                Ir a mi carrito
-              </Link>
-            </div>
-          )}
+          />
+        ) : (
+          <div>
+            <Link className="boton-carrito" to="/cart">
+              Ir a mi carrito
+            </Link>
+          </div>
+        )}
 
-          {
-            initial && <p className="mensaje">Ya tienes {initial} unidades en el carrito</p>
-
-          }
-        </div>
+        {initial && (
+          <p className="mensaje">Ya tienes {initial} unidades en el carrito</p>
+        )}
       </div>
       <Footer />
     </div>

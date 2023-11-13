@@ -21,21 +21,17 @@ export const CounterContainer = ({ stock, onAdd, initial = 1 }) => {
     if (contador > 1) setContador(contador - 1);
   };
 
-  const restablecer = () => {
-    setContador(1);
-  };
-
   return (
     <div>
       <Counter
         sumar={sumar}
         restar={restar}
-        restablecer={restablecer}
         contador={contador}
         onAdd={onAdd}
       />
       {showAlert && (
-        <Alert variant="filled" severity="error">
+        <Alert variant="filled" severity="error" style={{width:"38%"
+        ,margin:"10px"}}>
         Cantidad maxima
       </Alert>
       )}
