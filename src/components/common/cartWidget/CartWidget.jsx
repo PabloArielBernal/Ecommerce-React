@@ -11,8 +11,8 @@ export const CartWidget = () => {
   let total = getTotalQuantity()
 
   return (
-    <Link to="./cart">
-      <Badge badgeContent={total} showZero color="primary">
+    <Link to="./cart" >
+      <Badge badgeContent={total} showZero color="primary" >
       <ShoppingCartIcon color="primary"/>
     </Badge>
     </Link>

@@ -1,18 +1,111 @@
-.footer{
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+  height: 280px;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  line-height: 50px;
+  font-family: 25px;
+  color: #000000;
+  background-color: #f0cf17;
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.redes-footer {
+  display: flex;
+  padding: 25px;
+  gap: 10px;
+  width: 30%;
+}
+
+.redes-footer a > svg {
+  width: 100%;
+  color: #fff;
+  font-size: 100px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.redes-footer a > svg:hover {
+  color: #f0cf17;
+}
+
+#a li {
+  margin-bottom: 15px;
+  background-color: #3e3e3e;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#a li:hover {
+  background-color: #f0cf17;
+  color: #000;
+  transition: all 0.9s;
+}
+
+.medios-de-pago li {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.medios-de-pago img {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 7px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright:hover {
+  color: #f0cf17;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
     background-color: #1a1a1a;
     color: white;
     width: 100%;
-    height: 280px;
+    height: 610px;
     margin-top: 100px;
-}
+  }
 
-.footer-container{
+  .footer-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 40px;
-}
+    gap: 50px;
+  }
 
-.subir{
+  .subir {
     height: 40px;
     width: 40px;
     line-height: 50px;
@@ -25,159 +118,152 @@
     right: 40px;
     border: 2px solid white;
     border-radius: 3px;
-    
-}
+  }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.redes-footer {
-    display: flex;
+  .redes-footer {
+    display: inline;
     padding: 25px;
-    gap: 10px;
     width: 30%;
-}
+  }
 
-.redes-footer a > svg{
-    width: 100%;
+  .redes-footer a > svg {
+    width: 10%;
     color: #fff;
     font-size: 100px;
     height: 35px;
+    margin-top: 35px;
+    margin-left: 40px;
+  }
+
+  #a li {
+    margin-bottom: 15px;
+    background-color: #f0cf17;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+  }
+
+  .medios-de-pago li {
+    width: 40%;
+    margin-left: 147px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .medios-de-pago img {
+    height: 25px;
     margin-top: 15px;
-}
+    margin-left: 7px;
+    flex-wrap: wrap;
+  }
 
-.redes-footer a > svg:hover {
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
     color: #f0cf17;
+    text-align: center;
+    padding: 10px;
+  }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
-#a li{
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    height: 460px;
+    margin-top: 100px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+  }
+  
+  .subir {
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    font-family: 25px;
+    color: #000000;
+    background-color: #f0cf17;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: 2px solid white;
+    border-radius: 3px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .redes-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    gap: 0px;
+    width: 100%;
+  }
+  
+  .redes-footer a > svg {
+    width: 100%;
+    color: #fff;
+    font-size: 100px;
+    height: 45px;
+    margin-top: 15px;
+  }
+  
+  .redes-footer a > svg:hover {
+    color: #f0cf17;
+  }
+  
+  #a li {
     margin-bottom: 15px;
     background-color: #3e3e3e;
     border-radius: 3px;
     padding: 5px;
     display: flex;
     justify-content: center;
-}
-
-#a li:hover {
+  }
+  
+  #a li:hover {
     background-color: #f0cf17;
     color: #000;
     transition: all 0.9s;
-}
+  }
 
-.medios-de-pago li{
+  .contacto.li {
+    margin-top: 20px;
+  }
+  
+  .medios-de-pago li {
     width: 40%;
     display: flex;
-    justify-content: center;
-}
-
-.medios-de-pago img{
+    margin: 40px 0 0px 160px;
+  }
+  
+  .medios-de-pago img {
     height: 25px;
-    margin-top: 15px;
-    margin-left: 7px;
+    margin: 15px 0 20px 7px;
     flex-wrap: wrap;
-    
-}
-
-.copyright{
+  }
+  
+  .copyright {
     display: flex;
     justify-content: center;
-}
-
-.copyright:hover{
+    margin-top: 10p;
+  }
+  
+  .copyright:hover {
     color: #f0cf17;
     transition: all 0.3s;
-}
-
-@media only screen and (max-width: 480px) {
-
-    .footer{
-        background-color: #1a1a1a;
-        color: white;
-        width: 100%;
-        height: 610px;
-        margin-top: 100px;
-    }
-    
-    .footer-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 40px;
-        gap: 50px;
-    }
-    
-    .subir{
-        height: 40px;
-        width: 40px;
-        line-height: 50px;
-        font-family: 25px;
-        color: #000000;
-        background-color: #f0cf17;
-        text-align: center;
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        border: 2px solid white;
-        border-radius: 3px;
-        
-    }
-    
-    .redes-footer {
-        display: inline;
-        padding: 25px;
-        width: 30%;
-    }
-    
-    .redes-footer a > svg{
-        width: 10%;
-        color: #fff;
-        font-size: 100px;
-        height: 35px;
-        margin-top: 35px;
-        margin-left: 40px;
-    }  
-    
-    #a li{
-        margin-bottom: 15px;
-        background-color: #f0cf17;
-        border-radius: 3px;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        color: #000;
-    }
-    
-    .medios-de-pago li{
-        width: 40%;
-        margin-left: 147px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .medios-de-pago img{
-        height: 25px;
-        margin-top: 15px;
-        margin-left: 7px;
-        flex-wrap: wrap;
-        
-    }
-    
-    .copyright{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        font-size: 20px;
-        color: #f0cf17;
-        text-align: center;
-        padding: 10px;
-    }
-
-
-}
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-
+  }
 }

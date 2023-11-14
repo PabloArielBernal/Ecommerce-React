@@ -1,6 +1,5 @@
 import { EnConstruccion } from "../components/common/error/EnConstruccion";
 import { CartContainer } from "../components/pages/cart/CartContainer";
-import { CheckoutOficial } from "../components/pages/checkoutOficial/CheckoutOficial";
 import { CheckoutFormik } from "../components/pages/checkoutFormik/CheckoutFormik"
 import { Contacto } from "../components/pages/contacto/Contacto";
 import { ItemDetailContainer } from "../components/pages/itemDetailContainer/ItemDetailContainer";

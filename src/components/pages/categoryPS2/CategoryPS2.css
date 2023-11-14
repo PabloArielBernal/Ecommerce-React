@@ -171,11 +171,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-
-  .category-container{
+  .category-container {
     display: inline-block;
     flex-direction: column;
-
   }
 
   .category-items {
@@ -326,5 +324,157 @@
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .category-container {
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .category-items {
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .grupo1 {
+    display: inline;
+    height: 300px;
+    overflow: hidden;
+    text-shadow: 2px 2px 10px #000;
+    gap: 0px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin: 0px;
+  }
+
+  .grupo2 {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    overflow: hidden;
+    text-shadow: 2px 2px 10px #000;
+    gap: 0px;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin: 0px;
+  }
+
+  .grupo3 {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    overflow: hidden;
+    text-shadow: 2px 2px 10px #000;
+    gap: 100px;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin: 0px;
+  }
+
+  #accion {
+    background-image: url("https://res.cloudinary.com/drmbbxdtf/image/upload/v1699652793/Ecommerce%20Tienda%20de%20Videojuegos/god-of-war.webp");
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 900ms;
+    color: #fff;
+    filter: none;
+    transition: 1s ease;
+    margin: 20px 0 20px 0px;
+  }
+
+  #aventura {
+    background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699653683/Ecommerce%20Tienda%20de%20Videojuegos/shadow-of-the-colossus.png);
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: transform 900ms;
+    filter: none;
+    transition: 1s ease;
+    margin: 20px 0 20px 0px;
+  }
+
+  #deportes {
+    background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699654690/Ecommerce%20Tienda%20de%20Videojuegos/pes.jpg);
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: transform 900ms;
+    filter: none;
+    transition: 1s ease;
+    margin: 20px 0 20px 0px;
+  }
+
+  #carreras {
+    background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699654948/Ecommerce%20Tienda%20de%20Videojuegos/gt4.jpg);
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: transform 900ms;
+    filter: none;
+    transition: 1s ease;
+    margin: 20px 0 20px 0px;
+  }
+
+  #terror {
+    background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699655078/Ecommerce%20Tienda%20de%20Videojuegos/sillent-hill.jpg);
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: transform 900ms;
+    filter: none;
+    transition: 1s ease;
+    margin: 20px 0 20px 0px;
+  }
+
+  #lucha {
+    background-image: url(https://res.cloudinary.com/drmbbxdtf/image/upload/v1699655385/Ecommerce%20Tienda%20de%20Videojuegos/dbz.jpg);
+    font-size: 4em;
+    text-decoration: none;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: transform 900ms;
+    filter: none;
+    transition: 1s ease;
+  }
 }

@@ -5,7 +5,6 @@ export const CartContainer = () => {
   return (
     <>
     <div> <Cart /> </div>
-    <Footer />
     </>
     )
   }

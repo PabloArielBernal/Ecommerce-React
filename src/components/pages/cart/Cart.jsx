@@ -5,6 +5,8 @@ import { Button, IconButton } from "@mui/material";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { Footer } from "../../layout/footer/Footer";
+import { EmptyCart } from "./EmptyCart"
 
 export const Cart = () => {
   const { cart, clearCart, deleteProductById, getTotalPrice } =
@@ -30,44 +32,56 @@ export const Cart = () => {
   };
 
   return (
-    <div className="cart-container">
-      <div className="cart-item">
-        <p className="cart-title">Mi carrito</p>
-        <img
-          src="https://res.cloudinary.com/drmbbxdtf/image/upload/v1699630510/Ecommerce%20Tienda%20de%20Videojuegos/cart-3.png"
-          alt="cart-img"
-        />
-      </div>
-      {cart.map((product) => (
-        <div className="card" key={product.id}>
-          <img src={product.img} alt={product.title} />
-          <h1>{product.title}</h1>
-          <h2>${product.price}</h2>
-          <h3>cantidad: {product.quantity}</h3>
-          {
-            <IconButton onClick={() => deleteProductById(product.id)}>
-              <span className="tachito">
-              <DeleteIcon fontSize="large" color="primary" />
-              </span>
-            </IconButton>
-          }
+    <>
+      {cart.length > 0 ? (
+        <>
+        <div className="cart-container">
+        <div className="cart-item">
+          <p className="cart-title">Mi carrito</p>
+          <img
+            src="https://res.cloudinary.com/drmbbxdtf/image/upload/v1699630510/Ecommerce%20Tienda%20de%20Videojuegos/cart-3.png"
+            alt="cart-img"
+          />
         </div>
-      ))}
-
-      {cart.length > 0 && (
-        <div>
-          <span className="total">El total a pagar es: ${total}</span>
-
-          <div className="buttons">
-            <Link to="/checkout">
-              <Button variant="contained">Finalizar compra</Button>
-            </Link>
-            <Button variant="contained" onClick={clearCartWithAlert}>
-              Vaciar carrito
-            </Button>
+        {cart.map((product) => (
+          <div className="card" key={product.id}>
+            <img src={product.img} alt={product.title} />
+            <h1>{product.title}</h1>
+            <h2>${product.price}</h2>
+            <h3>cantidad: {product.quantity}</h3>
+            {
+              <IconButton onClick={() => deleteProductById(product.id)}>
+                <span className="tachito">
+                  <DeleteIcon fontSize="large" color="primary" />
+                </span>
+              </IconButton>
+            }
           </div>
-        </div>
+        ))}
+
+        {cart.length > 0 && (
+          <div>
+            <span className="total">El total a pagar es: ${total}</span>
+
+            <div className="buttons">
+              <Link to="/checkout">
+                <Button variant="contained">Finalizar compra</Button>
+              </Link>
+              <Button variant="contained" onClick={clearCartWithAlert}>
+                Vaciar carrito
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+      <Footer />
+        </>
+      ) : (
+        <>
+          <EmptyCart />
+          <Footer />
+        </>
       )}
-    </div>
+    </>
   );
 };

@@ -1,8 +1,121 @@
 .grid-container {
-    flex: 0 0 200px;
+  flex: 0 0 200px;
 }
 
-.grid-item{
+.grid-item {
+  border: 5px solid #efc900;
+  background-color: #efc900;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  height: 463px;
+  place-items: center;
+  display: grid;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+}
+
+.grid-container img {
+  width: 225px;
+}
+
+.item-title {
+  text-align: center;
+  font-size: 21px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.item-price {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.grid-container button {
+  border: 2px solid white;
+  color: white;
+  background: black;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.grid-container button:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.grid-botones {
+  display: flex;
+  gap: 45px;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    display: flex;
+  }
+
+  .grid-item {
+    border: 5px solid #efc900;
+    background-color: #efc900;
+    border-radius: 4px;
+    max-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    padding: 10px;
+  }
+
+  .grid-container img {
+    width: 100px;
+  }
+
+  .item-title {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .item-price {
+    font-size: 22px;
+    margin: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .grid-container button {
+    border: 2px solid white;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .grid-botones {
+    display: flex;
+    gap: 5px;
+  }
+
+  #boton-carrito {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .grid-container {
+    flex: 0 0 200px;
+  }
+  
+  .grid-item {
     border: 5px solid #efc900;
     background-color: #efc900;
     border-radius: 4px;
@@ -10,106 +123,47 @@
     height: 463px;
     place-items: center;
     display: grid;
-}
-
-.grid-item:hover{
+  }
+  
+  .grid-item:hover {
     transform: scale(1.03);
-}
-
-.grid-container img{
+  }
+  
+  .grid-container img {
     width: 225px;
-}
-
-.item-title{
+  }
+  
+  .item-title {
     text-align: center;
     font-size: 21px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-weight: 500;
-}
-
-.item-price{
+  }
+  
+  .item-price {
     font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.grid-container button{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .grid-container button {
     border: 2px solid white;
     color: white;
     background: black;
     border-radius: 4px;
     padding: 5px;
-    font-size:15px;
+    font-size: 15px;
     transition: all 0.5s ease;
-}
-
-.grid-container button:hover{
+  }
+  
+  .grid-container button:hover {
     color: #fff;
     transform: scale(1.05);
-}
-
-.grid-botones{
+  }
+  
+  .grid-botones {
     display: flex;
     gap: 45px;
-}
-
-@media only screen and (max-width: 480px) { 
-
-    .grid-container {
-        display: flex;
-        
-    }
-    
-    .grid-item {
-        border: 5px solid #efc900;
-        background-color: #efc900;
-        border-radius: 4px;
-        max-height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* margin: -40px 230px 0px 0px ; */
-        width: 430px;
-        padding: 10px;
-        
-    }
-    
-    .grid-container img {
-        width: 100px;
-    }
-    
-    .item-title {
-        text-align: center;
-        font-size: 18px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: 500;
-        padding: 10px;
-    }
-    
-    .item-price {
-        font-size: 22px;
-        margin: 5px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
-    .grid-container button {
-        border: 2px solid white;
-        color: white;
-        background: black;
-        border-radius: 4px;
-        padding: 5px;
-        font-size:15px;
-    }
-
-    .grid-botones {
-        display: flex;
-        gap: 5px;
-    }
-
-    #boton-carrito {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+  }
 
 }

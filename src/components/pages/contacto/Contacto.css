@@ -1,137 +1,199 @@
-
 .contacto-items {
-    background-color: #ddd;
-    width: 100%;
-    height: 900px;
-    padding: 50px;
-    border-radius: 20px;
-    border: 3px solid #b5b5b5;
+  background-color: #ddd;
+  width: 100%;
+  height: 900px;
+  padding: 50px;
+  border-radius: 20px;
+  border: 3px solid #b5b5b5;
 }
 
 .contacto-titulo {
-    font-size: 40px;
-    text-transform: uppercase;
-    padding: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 30px;
 }
 
 .texto-datos {
-    font-size: 23px;
-    padding-bottom: 25px;
+  font-size: 23px;
+  padding-bottom: 25px;
 }
 
 .texto-datos img {
-    height: 30px;
+  height: 30px;
 }
 
 .redes-titulo {
-    font-size: 30px;
-    margin-top: 50px;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .redes {
-    gap: 40px;
-    margin: 0;
+  gap: 40px;
+  margin: 0;
 }
 
 .redes img {
-    height: 80px;
-    transition: scale 500ms;
-    margin: 30px 40px 20px 0px;
+  height: 80px;
+  transition: scale 500ms;
+  margin: 30px 40px 20px 0px;
 }
 
 .redes img:hover {
-    scale: 120%;
-    
+  scale: 120%;
 }
 
-.playstation{
-    font-size: 35px;
-    color: #006FCD;
-    margin-top: 65px;
-    padding:30px;
+.playstation {
+  font-size: 35px;
+  color: #006fcd;
+  margin-top: 65px;
+  padding: 30px;
 }
 
-.lista-playstation{
-    margin-right: 550px;
-    
+.lista-playstation {
+  margin-right: 550px;
 }
 
-.lista-playstation img{
-    height: 55px;
-    padding: 10px;
-    border-radius: 10px;
-    transition: scale 600ms;
+.lista-playstation img {
+  height: 55px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: scale 600ms;
 }
 
-.lista-playstation img:hover{
-    scale: 120%;
+.lista-playstation img:hover {
+  scale: 120%;
 }
 
 @media only screen and (max-width: 480px) {
-    
-.contacto-items {
+  .contacto-items {
     background-color: #ddd;
     width: 100%;
     height: 730px;
     padding: 20px;
     border-radius: 10px;
     border: 3px solid #b5b5b5;
-}
+  }
 
-.contacto-titulo {
+  .contacto-titulo {
     font-size: 24px;
     text-transform: uppercase;
     padding: 0px;
     margin-bottom: 40px;
-}
+  }
 
-.texto-datos {
+  .texto-datos {
     font-size: 16px;
     padding-bottom: 25px;
-}
+  }
 
-.texto-datos img {
+  .texto-datos img {
     height: 20px;
-}
+  }
 
-.redes-titulo {
+  .redes-titulo {
     font-size: 22px;
     margin-top: 50px;
-}
+  }
 
-.redes {
+  .redes {
     gap: 5px;
     margin-top: 8px;
     display: flex;
-}
+  }
 
-.redes img {
+  .redes img {
     height: 40px;
-    
-}
+  }
 
-.playstation{
+  .playstation {
     font-size: 25px;
-    color: #006FCD;
+    color: #006fcd;
     margin-top: 20px;
-    padding:35px;
-}
+    padding: 35px;
+  }
 
-.lista-playstation{
+  .lista-playstation {
     margin: -10px 20px 0px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-}
+  }
 
-.lista-playstation img{
+  .lista-playstation img {
     height: 40px;
     padding: 5px;
     border-radius: 10px;
-}
+  }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
+  .contacto-items {
+    background-color: #ddd;
+    width: 100%;
+    height: 900px;
+    padding: 50px;
+    border-radius: 20px;
+    border: 3px solid #b5b5b5;
+  }
+  
+  .contacto-titulo {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 35px 0;
+  }
+  
+  .texto-datos {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+  
+  .texto-datos img {
+    height: 27px;
+  }
+  
+  .redes-titulo {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  
+  .redes {
+    gap: 40px;
+    margin: 0;
+  }
+  
+  .redes img {
+    height: 60px;
+    transition: scale 500ms;
+    margin: 30px 40px 20px 0px;
+  }
+  
+  .redes img:hover {
+    scale: 120%;
+  }
+  
+  .playstation {
+    font-size: 35px;
+    color: #006fcd;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  
+  .lista-playstation {
+    margin-right: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .lista-playstation img {
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: scale 600ms;
+  }
+  
+  .lista-playstation img:hover {
+    scale: 120%;
+  }
 }

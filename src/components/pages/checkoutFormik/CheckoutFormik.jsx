@@ -32,7 +32,7 @@ export const CheckoutFormik = () => {
       addDoc(ordersCollection, order).then((res) => setOrderId(res.id));
 
       cart.forEach((elemento) => {
-        updateDoc(doc(database, "produts", elemento.id), {
+        updateDoc(doc(database, "products", elemento.id), {
           stock: elemento.stock - elemento.quantity,
         });
       });
