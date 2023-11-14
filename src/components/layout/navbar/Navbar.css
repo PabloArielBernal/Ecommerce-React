@@ -29,10 +29,13 @@ li{
         background-color: #E40544;
         padding: 20px 20px;
         border-bottom: black 3px solid;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .navbar img{
-        margin-left: 160px;
+        margin-left: 0px;
         margin-bottom: 30px;
         height: 80px;
         width: auto;

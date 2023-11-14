@@ -7,8 +7,8 @@ export const customTheme = createTheme ({
             secondary: "#4B4B4B"
         },
         secondary: {
-            main: "#ffa600",
-            secondary: "#FF530D"
+            main: "#53e40f",
+            secondary: "#ffa600"
         }
     }
 })
